@@ -1,3 +1,22 @@
+## Instructions
+git clone the repository
+
+run npm i
+
+run yarn start 
+
+## Overview
+It is a simple app that creates a date time line in which the date cards are spaced apart from each other according to the number of days gap between them.
+
+The input is given in the form of comma seperated input string ( eg.,2019-06-28,2019-06-27,2019-06-26,2019-06-22,2019-07-25,2020-02-02).
+
+This string is then split and converted into an array of date objects sorted in chronological order.
+
+The difference between these date objects is calculated and stored in a seperate array called diffArr, which is an integer array that reprsents the number of days the dates are apart.
+
+This diffArr values are then used to determine the marginRight property of the element in pixels. This property was chosen to place the date cards apart from each other depending on the number of days between each one of them.
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
